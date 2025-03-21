@@ -23,6 +23,61 @@ data from multiple users performing various activities on different devices .
 **Dataset-2:-** (Mendley dataset) This dataset is a publicly available dataset , particularly focusing on the interaction of users with the Mendeley platform .  
 **Link:-** 
 
+### METHODOLOGY 
+
+# Data Preprocessing 
+1. Preprocessing the Data In this step, data from 117 users is segregated into two categories: processing User , Corrupted users .I considered processing user id as legitimate and 10 corrupted users for corrupting the behaviour pattern of legitimate user for ensuring a proficient training of the model remsembling
+the real time behaviour patterns of an user. These user ids are taken during runtime .
+2. Creating Observations for Both Types of User IDs Observations are generated using
+two parameters, N = 8 and H = 3 .
+4. Creating Summary Features Summary features capture the core characteristics of each
+observation by computing metrics such as: Latency ( difference in time since beginning of last
+event in an obseration time since beginning of first event ) Standard Devialtion of time diff
+column (variability ) Typing speed of the user (Number of events / latency ) These features are
+essential for capturing core trends helping the model to focus on key differentiators
+between legitimate and corrupted users.
+5. Splitting Data of considered legitimate user into Training and Testing Sets To eval-
+uate the model’s performance reliably (70 30 etc)
+7. Feature Reduction using Principal Component Analysis (PCA) and  Autoencoders
+9. Creating Final Observation Set The final dataset is constructed by augumenting obser-
+vations from: Processing User: Represents legitimate behavior. Corrupted Users: Represents
+faulty or malicious patterns.
+10. Creating Episodes In Reinforcement Learning (RL) .
+
+# Model
+12. Model Implementation using  
+DDQN:- An advanced RL algorithm that addresses overestimation issues in traditional Q-learning. DDQN uses two networks:
+*Evaluation Network
+*Target Network
+Training Process: Episodes are fed to the model to train it on legitimate and corrupted behavior
+patterns. Testing the test set of legitimate user combined with Corrupted Data of other users
+taken randomly suring run time
+
+
+# Hyperparameters
+State Size: 10  
+Number of features (columns) in the dataset, defining the model’s input size.
+Action Size: 2  
+Number of possible outputs (e.g., classify as legitimate or corrupted).
+Epsilon Parameters: (Control exploration vs. exploitation during training)
+
+Epsilon Start (0.1): Encourages exploration initially to discover new patterns.
+Epsilon End (0.01): Shifts toward exploitation as training progresses.
+Replay Memory: 1000
+
+Stores past experiences for batch training, improving sample efficiency.
+Batch Size: 128
+
+Determines the number of samples processed at once during training.
+C Update: 2
+
+Defines how often the target network is updated, stabilizing training.
+
+ Reward Function :The reward system guides the model’s learning: Correct Prediction:
++1 point for true positives (TP) or false positives (FP). Misclassification: 1 point for false
+negatives (FN) or other incorrect predictions. Purpose: Reinforces the model to favor correct
+predictions while penalizing incorrect ones.
+
 
 
 
