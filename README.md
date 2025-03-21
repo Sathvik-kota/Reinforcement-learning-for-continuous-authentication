@@ -23,9 +23,9 @@ data from multiple users performing various activities on different devices .
 **Dataset-2:-** (Mendley dataset) This dataset is a publicly available dataset , particularly focusing on the interaction of users with the Mendeley platform .  
 **Link:-** 
 
-### METHODOLOGY 
+# METHODOLOGY 
 
-# Data Preprocessing 
+### Data Preprocessing 
 1. Preprocessing the Data In this step, data from 117 users is segregated into two categories: processing User , Corrupted users .I considered processing user id as legitimate and 10 corrupted users for corrupting the behaviour pattern of legitimate user for ensuring a proficient training of the model remsembling
 the real time behaviour patterns of an user. These user ids are taken during runtime .
 2. Creating Observations for Both Types of User IDs Observations are generated using
@@ -44,7 +44,7 @@ vations from: Processing User: Represents legitimate behavior. Corrupted Users: 
 faulty or malicious patterns.
 10. Creating Episodes In Reinforcement Learning (RL) .
 
-# Model
+### Model
 12. Model Implementation using  
 DDQN:- An advanced RL algorithm that addresses overestimation issues in traditional Q-learning. DDQN uses two networks:
 *Evaluation Network
@@ -54,7 +54,7 @@ patterns. Testing the test set of legitimate user combined with Corrupted Data o
 taken randomly suring run time
 
 
-# Hyperparameters
+### Hyperparameters
 State Size: 10  
 Number of features (columns) in the dataset, defining the model’s input size.
 Action Size: 2  
