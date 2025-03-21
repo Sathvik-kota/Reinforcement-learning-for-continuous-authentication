@@ -26,23 +26,26 @@ data from multiple users performing various activities on different devices .
 # METHODOLOGY 
 
 ### Data Preprocessing 
-1. Preprocessing the Data - In this step, data from 117 users is segregated into two categories: processing User , Corrupted users .I considered processing user id as legitimate and 10 corrupted users for corrupting the behaviour pattern of legitimate user for ensuring a proficient training of the model remsembling
-the real time behaviour patterns of an user. These user ids are taken during runtime .
-2. Creating Observations for Both Types of User IDs Observations are generated using
-two parameters, N = 8 and H = 3 .
-3. Creating Summary Features - Summary features capture the core characteristics of each
+<ul> 
+<li> Preprocessing the Data - In this step, data from 117 users is segregated into two categories: processing User , Corrupted users .I considered processing user id as legitimate and 10 corrupted users for corrupting the behaviour pattern of legitimate user for ensuring a proficient training of the model remsembling
+the real time behaviour patterns of an user. These user ids are taken during runtime .</li>
+<li> Creating Observations for Both Types of User IDs Observations are generated using
+two parameters, N = 8 and H = 3 .</li>
+<li> Creating Summary Features - Summary features capture the core characteristics of each
 observation by computing metrics such as: Latency ( difference in time since beginning of last
 event in an obseration time since beginning of first event ) Standard Devialtion of time diff
 column (variability ) Typing speed of the user (Number of events / latency ) These features are
 essential for capturing core trends helping the model to focus on key differentiators
-between legitimate and corrupted users.
-4. Splitting Data of considered legitimate user into Training and Testing Sets To eval-
-uate the model’s performance reliably (70 30 etc)
-5. Feature Reduction using Principal Component Analysis (PCA) and  Autoencoders
-6. Creating Final Observation Set The final dataset is constructed by augumenting obser-
+between legitimate and corrupted users.</li>
+<li> Splitting Data of considered legitimate user into Training and Testing Sets To eval-
+uate the model’s performance reliably (70 30 etc)</li>
+<li> Feature Reduction using Principal Component Analysis (PCA) and  Autoencoders</li>
+<li> Creating Final Observation Set The final dataset is constructed by augumenting obser-
 vations from: Processing User: Represents legitimate behavior. Corrupted Users: Represents
-faulty or malicious patterns.
-7. Creating Episodes In Reinforcement Learning (RL) .
+faulty or malicious patterns.</li>
+<li> Creating Episodes In Reinforcement Learning (RL) .</li>
+</ul>
+
 
 ### Model
  
@@ -53,7 +56,7 @@ DDQN:- An advanced RL algorithm that addresses overestimation issues in traditio
  </ul>
  
 **Training Process-** Episodes are fed to the model to train it on legitimate and corrupted behavior
-patterns. 
+patterns.   
 **Testing-** The test set of legitimate user combined with Corrupted Data of other users
 taken randomly suring run time
 
