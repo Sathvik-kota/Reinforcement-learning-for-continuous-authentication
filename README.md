@@ -99,7 +99,7 @@ Batch Size(128) - Determines the number of samples processed at once during trai
  C Update (2)-Defines how often the target network is updated, stabilizing training.
 </li>
 <li>
- Reward Function - The reward system guides the model’s learning <br> 
+ Reward Function - The reward system guides the model’s learning .<br> 
 Correct Prediction:+1 point for true positives (TP) or false positives (FP).   <br> 
 Misclassification: 1 point for false negatives (FN) or other incorrect predictions.<br>    
 Purpose: Reinforces the model to favor correct predictions while penalizing incorrect ones.  
