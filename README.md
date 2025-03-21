@@ -8,3 +8,6 @@ Continuous authentication, on the other hand, estimates the likelihood that the 
 is the same user who initially claimed to be. This is done by analysing the user’s behaviour,
 such as keystroke dynamics, without the need for external device  
 The proposed model utilizes reinforcement learning techniques to identify and authenticate users , by continuously monitoring their behaviour.
+# Objective
+The main objective  of our project is to design and implement an accurate and comprehensive model for user authentication and identification using  keystroke dynamics. This involves analysing
+typing, website activity, and mouse movements to ascertain the user’s presence .This can help to secure user accounts and can improve the security and privacy of online systems, as well as the user experience.           
