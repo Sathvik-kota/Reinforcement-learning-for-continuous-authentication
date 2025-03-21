@@ -39,7 +39,7 @@ data from multiple users performing various activities on different devices .
 <li> Preprocessing the Data - In this step, data from 117 users is segregated into two categories: processing User , Corrupted users .I considered processing user id as legitimate and 10 corrupted users for corrupting the behaviour pattern of legitimate user for ensuring a proficient training of the model remsembling
 the real time behaviour patterns of an user. These user ids are taken during runtime .</li>
 <li> Creating Observations for Both Types of User IDs Observations are generated using
-two parameters, N = 8 and H = 3 .</li>
+two parameters, N( no of events in an observation ) and H ( hop count ).</li>
 <li> Creating Summary Features - Summary features capture the core characteristics of each
 observation by computing metrics such as: Latency ( difference in time since beginning of last
 event in an obseration time since beginning of first event ) Standard Devialtion of time diff
