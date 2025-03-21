@@ -47,8 +47,10 @@ faulty or malicious patterns.
 ### Model
  
 DDQN:- An advanced RL algorithm that addresses overestimation issues in traditional Q-learning. DDQN uses two networks:  
--Evaluation Network  
--Target Network  
+<ul>
+  <li>Evaluation Network </li> 
+  <li>Target Network</li>  
+ </ul>
 **Training Process:** Episodes are fed to the model to train it on legitimate and corrupted behavior
 patterns. Testing the test set of legitimate user combined with Corrupted Data of other users
 taken randomly suring run time
