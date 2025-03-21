@@ -100,9 +100,9 @@ Batch Size(128) - Determines the number of samples processed at once during trai
 </li>
 <li>
  Reward Function - The reward system guides the model’s learning  
-Correct Prediction:+1 point for true positives (TP) or false positives (FP).  
-Misclassification: 1 point for false negatives (FN) or other incorrect predictions.  
-Purpose: Reinforces the model to favor correct predictions while penalizing incorrect ones.
+Correct Prediction:+1 point for true positives (TP) or false positives (FP).    
+Misclassification: 1 point for false negatives (FN) or other incorrect predictions.    
+Purpose: Reinforces the model to favor correct predictions while penalizing incorrect ones.  
 </li>
 
 </ul>
