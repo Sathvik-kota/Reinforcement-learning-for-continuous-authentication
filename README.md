@@ -6,4 +6,5 @@ multi-factor authentication methods, where users enter their credentials at the 
 in to the system, and the verification happens in the backend database  
 Continuous authentication, on the other hand, estimates the likelihood that the user accessing the system throughout the session
 is the same user who initially claimed to be. This is done by analysing the user’s behaviour,
-such as keystroke dynamics, without the need for external device
+such as keystroke dynamics, without the need for external device  
+The proposed model utilizes reinforcement learning techniques to identify and authenticate users , by continuously monitoring their behaviour.
