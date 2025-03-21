@@ -18,13 +18,15 @@ Reinforcement learning is a type of machine learning that focuses on training mo
 # Dataset 
 <ul>
 <li>
-  **Dataset-1:-** The BBMAS (Behavioral Biometrics Multidevice Active Authentication System) dataset is a public dataset designed for research in behavioral biometrics .  It is a collection of keystroke
+ 
+  **BBMAS (Behavioral Biometrics Multidevice Active Authentication System) dataset** -This is a public dataset designed for research in behavioral biometrics .  It is a collection of keystroke
 data from multiple users performing various activities on different devices .  
 **Link:-** 
 
 </li>
 <li>
- **Dataset-2:-** (Mendley dataset) This dataset is a publicly available dataset , particularly focusing on the interaction of users with the Mendeley platform .  
+ 
+ **Mendley dataset**-This dataset is a publicly available dataset , particularly focusing on the interaction of users with the Mendeley platform .  
 **Link:-** 
 </li>
 </ul>
