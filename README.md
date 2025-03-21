@@ -51,14 +51,18 @@ DDQN:- An advanced RL algorithm that addresses overestimation issues in traditio
   <li>Evaluation Network </li> 
   <li>Target Network</li>  
  </ul>
-**Training Process:** Episodes are fed to the model to train it on legitimate and corrupted behavior
-patterns. Testing the test set of legitimate user combined with Corrupted Data of other users
+ 
+**Training Process-** Episodes are fed to the model to train it on legitimate and corrupted behavior
+patterns. 
+**Testing-** The test set of legitimate user combined with Corrupted Data of other users
 taken randomly suring run time
 
 
 ### Hyperparameters
-State Size: 10  
-Number of features (columns) in the dataset, defining the model’s input size.
+<ul>
+ <li>  State Size: 10  
+Number of features (columns) in the dataset, defining the model’s input size.</li>
+
 Action Size: 2  
 Number of possible outputs (e.g., classify as legitimate or corrupted).
 Epsilon Parameters: (Control exploration vs. exploitation during training)
@@ -79,6 +83,8 @@ Defines how often the target network is updated, stabilizing training.
 +1 point for true positives (TP) or false positives (FP). Misclassification: 1 point for false
 negatives (FN) or other incorrect predictions. Purpose: Reinforces the model to favor correct
 predictions while penalizing incorrect ones.
+</ul>
+
 
 
 
