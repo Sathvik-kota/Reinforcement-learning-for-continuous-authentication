@@ -60,29 +60,37 @@ taken randomly suring run time
 
 ### Hyperparameters
 <ul>
- <li>  State Size: 10  
+ <li>  State Size: 10    
 Number of features (columns) in the dataset, defining the model’s input size.</li>
 
-Action Size: 2  
+<li>Action Size: 2  
 Number of possible outputs (e.g., classify as legitimate or corrupted).
-Epsilon Parameters: (Control exploration vs. exploitation during training)
+</li>
+<li>
+ Epsilon Parameters- (Control exploration vs. exploitation during training)
+</li>
+<li>
+ Epsilon Start (0.1) - Encourages exploration initially to discover new patterns.
+</li>
+<li>
+ Epsilon End (0.01) - Shifts toward exploitation as training progresses.
+</li>
+<li>
+ Replay Memory (1000 )- Stores past experiences for batch training, improving sample efficiency.
+</li>
+<li>
+Batch Size(128) - Determines the number of samples processed at once during training.
+</li>
+<li>
+ C Update (2)-Defines how often the target network is updated, stabilizing training.
+</li>
+<li>
+ Reward Function - The reward system guides the model’s learning  
+Correct Prediction:+1 point for true positives (TP) or false positives (FP).  
+Misclassification: 1 point for false negatives (FN) or other incorrect predictions.  
+Purpose: Reinforces the model to favor correct predictions while penalizing incorrect ones.
+</li>
 
-Epsilon Start (0.1): Encourages exploration initially to discover new patterns.
-Epsilon End (0.01): Shifts toward exploitation as training progresses.
-Replay Memory: 1000
-
-Stores past experiences for batch training, improving sample efficiency.
-Batch Size: 128
-
-Determines the number of samples processed at once during training.
-C Update: 2
-
-Defines how often the target network is updated, stabilizing training.
-
- Reward Function :The reward system guides the model’s learning: Correct Prediction:
-+1 point for true positives (TP) or false positives (FP). Misclassification: 1 point for false
-negatives (FN) or other incorrect predictions. Purpose: Reinforces the model to favor correct
-predictions while penalizing incorrect ones.
 </ul>
 
 
